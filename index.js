@@ -7,6 +7,7 @@ const app = express();
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
 // Using morgan tiny format to log all requests
 // app.use(morgan('tiny'))
 
